@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar__efficiency__item{
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    /* green background */
+    /* background: rgb(0,169,126); */
+background: -moz-linear-gradient(141deg, rgba(0,169,126,1) 0%, rgba(221,221,221,1) 61%, rgba(240,240,240,1) 100%);
+background: -webkit-linear-gradient(141deg, rgba(0,169,126,1) 0%, rgba(221,221,221,1) 61%, rgba(240,240,240,1) 100%);
+background: linear-gradient(141deg, rgba(0,169,126,1) 0%, rgba(221,221,221,1) 61%, rgba(240,240,240,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a97e",endColorstr="#f0f0f0",GradientType=1);
+}
+
+.sidebar__efficiency__item::-webkit-slider-thumb{
+        -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  box-shadow: 1px 2px 5px 2px #aaaa;
+  background: #eeee;
+  border-radius: 100%;
+  cursor: pointer;
+  /* position: relative; */
+}
+
+.sidebar__efficiency__item::-moz-slider-thumb{
+        -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  box-shadow: 1px 2px 5px 2px #aaaa;
+  background: #eeee;
+  border-radius: 100%;
+  cursor: pointer;
+  /* position: relative; */
+}
+
+.sidebar__efficiency__item::-moz-slider-thumb::before{
+        -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background: red;
+}
+
+.percent{
+    left: -1rem;
+}
+
+.long-active{
+    background-color: #D9F8EA;
+    border-color: #5BA886;
+    color: #5BA886;
+}
+
+.short-active{
+    background-color: #FFE3E0;
+    border-color: #D48F99;
+    color: #D48F99;
+}
+
+.win-active{
+    background-color: #D9F8EA;
+    border-color: #5BA886;
+    color: #5BA886;
+}
+
+.loss-active{
+    background-color: #FFE3E0;
+    border-color: #D48F99;
+    color: #D48F99;
+}
+
+
+/* accordion */
+
+/* .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+} */
+
+.active, {
+    display: flex;
+}
+
+/* .panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+} */

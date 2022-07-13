@@ -1,0 +1,24 @@
+{
+  "name": "sidebar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/twcss.css -o ./docs/css/main.css",
+    "watch": "tailwindcss -i ./src/twcss.css -o ./docs/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoozbehZhuleh/Sidebar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoozbehZhuleh/Sidebar/issues"
+  },
+  "homepage": "https://github.com/RoozbehZhuleh/Sidebar#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.5"
+  }
+}
