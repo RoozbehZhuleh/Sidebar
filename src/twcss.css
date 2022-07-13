@@ -75,6 +75,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a97e",endCo
     color: #D48F99;
 }
 
+.panel{
+  transition: all 0.3 linear;
+}
+
+.accordion{
+  transition: all 0.2s linear;
+}
+
+
+::-webkit-calendar-picker-indicator {cursor: pointer};
 
 /* accordion */
 
