@@ -1,150 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../docs/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Sidebar</title>
 </head>
+
 <body>
     <div class="sidebar flex flex-col h-full w-1/3 p-3 gap-5">
         <div class="sidebar__title flex flex-row gap-2" ">
-            <div class="blueDot rounded-full bg-blue-700 w-3 h-3 self-center animate-ping"></div>
-            <div class="h2 text-xl font-bold ">Filter By:</div>
-        </div>
-        <div class="sidebar__items flex flex-col gap-5 ml-5">
-            <div class="sidebar__pair flex-col gap-2">
-                <button class="sidebar__pair__btn accordion  flex-co w-full">
-                    <div class="sidebar__pair__title flex flex-row justify-between w-full">
-                        <p class="font-semibold">Pair</p>
-                        <p class="text-blue-700 neg">+</p>
-                    </div>
-                </button>
-                <div class="sidebar__pair__items panel hidden flex-col gap-2 justify-start text-sm">
-                    <div class="sidebar__pair__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>BTCUSDT</p>
-                    </div> 
-                    <div class="sidebar__pair__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>ETHUSDT</p>
-                    </div> 
-                    <div class="sidebar__pair__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>XRPUSDT</p>
-                    </div> 
-                    <div class="sidebar__pair__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>BNBUSDT</p>
-                    </div> 
-                    <div class="sidebar__pair__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>LINKUSDT</p>
-                    </div> 
-                    <div class="sidebar__pair__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>ADAUSDT</p>
-                    </div> 
-                       
+            <div class=" blueDot rounded-full bg-blue-700 w-3 h-3 self-center animate-ping"></div>
+        <div class="h2 text-xl font-bold ">Filter By:</div>
+    </div>
+    <div class="sidebar__items flex flex-col gap-5 ml-5">
+        <div class="sidebar__pair flex-col gap-2">
+            <button class="sidebar__pair__btn accordion  flex-co w-full">
+                <div class="sidebar__pair__title flex flex-row justify-between w-full">
+                    <p class="font-semibold">Pair</p>
+                    <p class="text-blue-700 neg">+</p>
                 </div>
-            </div>
-          
-            <div class="sidebar__date flex flex-col gap-2">
-                <button class="sidebar__date__btn accordion flex flex-col w-full">
-                    <div class="sidebar__date__title flex flex-row justify-between w-full">
-                        <p class="font-semibold">Date</p>
-                        <p class="text-blue-700 neg">+</p>
-                    </div>
-                </button>
-                <div class="sidebar__date__items panel hidden flex-row gap-5">
-                    <input type="date" class="sidebar__date__input w-1/4 text-sm">
-                    <p>To</p>
-                    <input type="date" class="sidebar__date__input w-1/4 text-sm"">
+            </button>
+            <div class="sidebar__pair__items panel hidden flex-col gap-2 justify-start text-sm">
+                <div class="sidebar__pair__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>BTCUSDT</p>
                 </div>
-            </div>
+                <div class="sidebar__pair__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>ETHUSDT</p>
+                </div>
+                <div class="sidebar__pair__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>XRPUSDT</p>
+                </div>
+                <div class="sidebar__pair__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>BNBUSDT</p>
+                </div>
+                <div class="sidebar__pair__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>LINKUSDT</p>
+                </div>
+                <div class="sidebar__pair__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>ADAUSDT</p>
+                </div>
 
-            <div class="sidebar__size flex flex-col gap-2">
-                <button class="sidebar__size__btn accordion flex flex-col w-full">
-                    <div class="sidebar__size__title flex flex-row justify-between w-full">
-                        <p class="font-semibold">Size</p>
-                        <p class="text-blue-700 neg">+</p>
-                    </div>
-                </button>
-                <div class="sidebar__size__items panel hidden flex-col gap-2 text-sm">
-                    <div class="sidebar__size__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>0-1.99</p>
-                    </div>
-                    <div class="sidebar__size__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>2-4.99</p>
-                    </div>
-                    <div class="sidebar__size__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>5-9.99</p>
-                    </div>
-                    <div class="sidebar__size__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>10-19.99</p>
-                    </div>
-                    <div class="sidebar__size__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>20-49.99</p>
-                    </div>
-                    <div class="sidebar__size__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>50-199.99</p>
-                    </div>
-                    <div class="sidebar__size__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>200-999.99</p>
-                    </div>
-                    <div class="sidebar__size__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>1000-9999.99</p>
-                    </div>
-                    <div class="sidebar__size__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>10000 AND OVER</p>
-                    </div>
+            </div>
+        </div>
+
+        <div class="sidebar__date flex flex-col gap-2">
+            <button class="sidebar__date__btn accordion flex flex-col w-full">
+                <div class="sidebar__date__title flex flex-row justify-between w-full">
+                    <p class="font-semibold">Date</p>
+                    <p class="text-blue-700 neg">+</p>
+                </div>
+            </button>
+            <div class="sidebar__date__items panel bg-blue-50 hidden flex-row gap-5 p-2">
+                <input type="date" class="sidebar__date__input w-2/5 text-sm bg-blue-50 border-0 outline-0">
+                <p>To</p>
+                <input type="date" class="sidebar__date__input w-2/5 text-sm bg-blue-50 border-0 outline-0">
+            </div>
+        </div>
+
+        <div class="sidebar__size flex flex-col gap-2">
+            <button class="sidebar__size__btn accordion flex flex-col w-full">
+                <div class="sidebar__size__title flex flex-row justify-between w-full">
+                    <p class="font-semibold">Size</p>
+                    <p class="text-blue-700 neg">+</p>
+                </div>
+            </button>
+            <div class="sidebar__size__items panel hidden flex-col gap-2 text-sm">
+                <div class="sidebar__size__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>0-1.99</p>
+                </div>
+                <div class="sidebar__size__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>2-4.99</p>
+                </div>
+                <div class="sidebar__size__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>5-9.99</p>
+                </div>
+                <div class="sidebar__size__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>10-19.99</p>
+                </div>
+                <div class="sidebar__size__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>20-49.99</p>
+                </div>
+                <div class="sidebar__size__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>50-199.99</p>
+                </div>
+                <div class="sidebar__size__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>200-999.99</p>
+                </div>
+                <div class="sidebar__size__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>1000-9999.99</p>
+                </div>
+                <div class="sidebar__size__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>10000 AND OVER</p>
                 </div>
             </div>
-            <div class="sidebar__direction flex flex-col gap-2">
-                <button class="sidebar__direction__btn accordion flex flex-col w-full">
-                    <div class="sidebar__direction__title flex flex-row justify-between w-full">
-                        <p class="font-semibold">Direction</p>
-                        <p class="text-blue-700 neg">+</p>
-                    </div>
-                </button>
-                <div class="sidebar__direction__items panel hidden flex-row gap-5">
-                    <button class="sidebar__direction__item long__btn flex flex-row gap-2 rounded-md justify-center items-center border bg-gray-200 text-gray-500 p-2">
-                        <i class="fa-solid fa-arrow-trend-up"></i>
-                        <p>Long</p>
-                    </button>
-                    <button class="sidebar__direction__item short__btn flex flex-row justify-center items-center gap-2 rounded-md border bg-gray-200 text-gray-500 p-2">
-                        <i class="fa-solid fa-arrow-trend-down"></i>
-                        <p>Short</p>
-                    </button>
+        </div>
+        <div class="sidebar__direction flex flex-col gap-2">
+            <button class="sidebar__direction__btn accordion flex flex-col w-full">
+                <div class="sidebar__direction__title flex flex-row justify-between w-full">
+                    <p class="font-semibold">Direction</p>
+                    <p class="text-blue-700 neg">+</p>
                 </div>
-            </div>
-            <div class="sidebar__efficiency flex flex-col gap-2">
-                <button class="sidebar__efficiency__btn accordion flex flex-col w-full">
-                    <div class="sidebar__efficiency__title flex flex-row justify-between w-full">
-                        <p class="font-semibold">Efficiency</p>
-                        <p class="text-blue-700 neg">+</p>
-                    </div>
+            </button>
+            <div class="sidebar__direction__items panel hidden flex-row gap-5">
+                <button
+                    class="sidebar__direction__item long__btn flex flex-row gap-2 rounded-md justify-center items-center border bg-gray-200 text-gray-500 p-2">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <p>Long</p>
                 </button>
-                <div class="sidebar__efficiency__items panel hidden flex-row gap-5">
-                        <input class="sidebar__efficiency__item rounded-full w-4/5" type="range">
-                        <div class="percent relative text-sm"></div>
-                </div>
+                <button
+                    class="sidebar__direction__item short__btn flex flex-row justify-center items-center gap-2 rounded-md border bg-gray-200 text-gray-500 p-2">
+                    <i class="fa-solid fa-arrow-trend-down"></i>
+                    <p>Short</p>
+                </button>
             </div>
-            <!-- <div class="sidebar__risk flex flex-col gap-2">
+        </div>
+        <div class="sidebar__efficiency flex flex-col gap-2">
+            <button class="sidebar__efficiency__btn accordion flex flex-col w-full">
+                <div class="sidebar__efficiency__title flex flex-row justify-between w-full">
+                    <p class="font-semibold">Efficiency</p>
+                    <p class="text-blue-700 neg">+</p>
+                </div>
+            </button>
+            <div class="sidebar__efficiency__items panel hidden flex-row gap-5">
+                <input class="sidebar__efficiency__item rounded-full w-4/5" type="range">
+                <div class="percent relative text-sm"></div>
+            </div>
+        </div>
+        <!-- <div class="sidebar__risk flex flex-col gap-2">
                 <button class="sidebar__risk__btn flex flex-col w-full">
                     <div class="sidebar__risk__title flex flex-row justify-between w-full">
                         <p>risk</p>
@@ -156,100 +160,101 @@
                 </div>
             </div> -->
 
-            <div class="sidebar__rr flex flex-col gap-2">
-                <button class="sidebar__rr__btn accordion flex flex-co w-full">
-                    <div class="sidebar__rr__title flex flex-row justify-between w-full">
-                        <p class="font-semibold">Risk/Reward</p>
-                        <p class="text-blue-700 neg">+</p>
-                    </div>
-                </button>
-                <div class="sidebar__rr__items panel hidden flex-col gap-2 justify-start text-sm">
-                    <div class="sidebar__rr__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>LESS THAN 1/1</p>
-                    </div>
-                    <div class="sidebar__rr__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>1/1</p>
-                    </div>
-                    <div class="sidebar__rr__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>1/2</p>
-                    </div>
-                    <div class="sidebar__rr__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>1/3</p>
-                    </div>
-                    <div class="sidebar__rr__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>1/4</p>
-                    </div>
-                    <div class="sidebar__rr__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>1/5</p>
-                    </div>
-                    <div class="sidebar__rr__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>MORE THAN 1/5</p>
-                    </div>
-            
+        <div class="sidebar__rr flex flex-col gap-2">
+            <button class="sidebar__rr__btn accordion flex flex-co w-full">
+                <div class="sidebar__rr__title flex flex-row justify-between w-full">
+                    <p class="font-semibold">Risk/Reward</p>
+                    <p class="text-blue-700 neg">+</p>
                 </div>
-            </div>
+            </button>
+            <div class="sidebar__rr__items panel hidden flex-col gap-2 justify-start text-sm">
+                <div class="sidebar__rr__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>LESS THAN 1/1</p>
+                </div>
+                <div class="sidebar__rr__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>1/1</p>
+                </div>
+                <div class="sidebar__rr__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>1/2</p>
+                </div>
+                <div class="sidebar__rr__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>1/3</p>
+                </div>
+                <div class="sidebar__rr__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>1/4</p>
+                </div>
+                <div class="sidebar__rr__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>1/5</p>
+                </div>
+                <div class="sidebar__rr__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>MORE THAN 1/5</p>
+                </div>
 
-            <div class="sidebar__setup flex flex-col gap-2">
-                <button class="sidebar__setup__btn accordion flex flex-co w-full">
-                    <div class="sidebar__setup__title flex flex-row justify-between w-full">
-                        <p class="font-semibold">Setup</p>
-                        <p class="text-blue-700 neg">+</p>
-                    </div>
-                </button>
-                <div class="sidebar__setup__items panel hidden flex-col gap-2 justify-start text-sm">
-                    <div class="sidebar__setup__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>QML</p>
-                    </div>
-                    <div class="sidebar__setup__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>SMC</p>
-                    </div>
-                    <div class="sidebar__setup__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>Divergence</p>
-                    </div>
-                    <div class="sidebar__setup__item flex flex-row gap-2">
-                        <input type="checkbox" name="" id="">
-                        <p>Trendline</p>
-                    </div>
-                </div>
             </div>
-            <div class="sidebar__wl flex flex-col gap-2">
-                <button class="sidebar__wl__btn accordion flex flex-col w-full">
-                    <div class="sidebar__wl__title flex flex-row justify-between w-full">
-                        <p class="font-semibold">Win/Loss</p>
-                        <p class="text-blue-700 neg">+</p>
-                    </div>
-                </button>
-                <div class="sidebar__wl__items panel hidden flex-row gap-5">
-                    <button class="sidebar__wl__item win__btn border bg-gray-200 text-gray-500 p-2 rounded-md">
-                        <p>Win</p>
-                    </button>
-                    <button class="sidebar__wl__item loss__btn border bg-gray-200 text-gray-500 p-2 rounded-md">
-                        <p>Loss</p>
-                    </button>
-                </div>
-            </div>
-            <div class="sidebar__btn flex flex-row gap-2">
-                    <button class="sidebar__btn__cancel w-2/5 rounded-md">
-                        <p>Cancel</p>
-                    </button>
-                    <button class="sidebar__btn__apply w-3/5 bg-blue-700 text-white rounded-md pt-1 pb-1 pl-3 pr-3">
-                        <p>Apply Filter</p>
-                    </button>
-            </div>
+        </div>
 
+        <div class="sidebar__setup flex flex-col gap-2">
+            <button class="sidebar__setup__btn accordion flex flex-co w-full">
+                <div class="sidebar__setup__title flex flex-row justify-between w-full">
+                    <p class="font-semibold">Setup</p>
+                    <p class="text-blue-700 neg">+</p>
+                </div>
+            </button>
+            <div class="sidebar__setup__items panel hidden flex-col gap-2 justify-start text-sm">
+                <div class="sidebar__setup__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>QML</p>
+                </div>
+                <div class="sidebar__setup__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>SMC</p>
+                </div>
+                <div class="sidebar__setup__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>Divergence</p>
+                </div>
+                <div class="sidebar__setup__item flex flex-row gap-2">
+                    <input type="checkbox" name="" id="">
+                    <p>Trendline</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar__wl flex flex-col gap-2">
+            <button class="sidebar__wl__btn accordion flex flex-col w-full">
+                <div class="sidebar__wl__title flex flex-row justify-between w-full">
+                    <p class="font-semibold">Win/Loss</p>
+                    <p class="text-blue-700 neg">+</p>
+                </div>
+            </button>
+            <div class="sidebar__wl__items panel hidden flex-row gap-5">
+                <button class="sidebar__wl__item win__btn border bg-gray-200 text-gray-500 p-2 rounded-md">
+                    <p>Win</p>
+                </button>
+                <button class="sidebar__wl__item loss__btn border bg-gray-200 text-gray-500 p-2 rounded-md">
+                    <p>Loss</p>
+                </button>
+            </div>
+        </div>
+        <div class="sidebar__btn flex flex-row gap-2">
+            <button class="sidebar__btn__cancel w-2/5 rounded-md">
+                <p>Cancel</p>
+            </button>
+            <button class="sidebar__btn__apply w-3/5 bg-blue-700 text-white rounded-md pt-1 pb-1 pl-3 pr-3">
+                <p>Apply Filter</p>
+            </button>
         </div>
 
     </div>
-    
+
+    </div>
+
 </body>
+
 </html>

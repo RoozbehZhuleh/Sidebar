@@ -762,18 +762,23 @@ video {
   outline-width: 0px;
 }
 
-.sidebar__efficiency__item{
+.sidebar__efficiency__item {
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
   /* green background */
   /* background: rgb(0,169,126); */
-  background: linear-gradient(141deg, rgba(0,169,126,1) 0%, rgba(221,221,221,1) 61%, rgba(240,240,240,1) 100%);
+  background: linear-gradient(
+    141deg,
+    rgba(0, 169, 126, 1) 0%,
+    rgba(221, 221, 221, 1) 61%,
+    rgba(240, 240, 240, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a97e",endColorstr="#f0f0f0",GradientType=1);
 }
 
-.sidebar__efficiency__item::-webkit-slider-thumb{
+.sidebar__efficiency__item::-webkit-slider-thumb {
   -webkit-appearance: none;
   /* Override default look */
   appearance: none;
@@ -786,7 +791,7 @@ video {
   /* position: relative; */
 }
 
-.sidebar__efficiency__item::-moz-slider-thumb{
+.sidebar__efficiency__item::-moz-slider-thumb {
   -webkit-appearance: none;
   /* Override default look */
   -moz-appearance: none;
@@ -800,7 +805,7 @@ video {
   /* position: relative; */
 }
 
-.sidebar__efficiency__item::-moz-slider-thumb::before{
+.sidebar__efficiency__item::-moz-slider-thumb::before {
   -webkit-appearance: none;
   /* Override default look */
   -moz-appearance: none;
@@ -811,45 +816,45 @@ video {
   background: red;
 }
 
-.percent{
+.percent {
   left: -1rem;
 }
 
-.long-active{
-  background-color: #D9F8EA;
-  border-color: #5BA886;
-  color: #5BA886;
+.long-active {
+  background-color: #d9f8ea;
+  border-color: #5ba886;
+  color: #5ba886;
 }
 
-.short-active{
-  background-color: #FFE3E0;
-  border-color: #D48F99;
-  color: #D48F99;
+.short-active {
+  background-color: #ffe3e0;
+  border-color: #d48f99;
+  color: #d48f99;
 }
 
-.win-active{
-  background-color: #D9F8EA;
-  border-color: #5BA886;
-  color: #5BA886;
+.win-active {
+  background-color: #d9f8ea;
+  border-color: #5ba886;
+  color: #5ba886;
 }
 
-.loss-active{
-  background-color: #FFE3E0;
-  border-color: #D48F99;
-  color: #D48F99;
+.loss-active {
+  background-color: #ffe3e0;
+  border-color: #d48f99;
+  color: #d48f99;
 }
 
-.panel{
+.panel {
   transition: all 0.3 linear;
 }
 
-.accordion{
+.accordion {
   transition: all 0.2s linear;
 }
 
 ::-webkit-calendar-picker-indicator {
-  cursor: pointer
-};
+  cursor: pointer;
+}
 
 /* accordion */
 
@@ -866,7 +871,7 @@ video {
   transition: 0.4s;
 } */
 
-.active, {
+.active {
   display: flex;
 }
 
