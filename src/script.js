@@ -51,22 +51,22 @@ let neg = document.querySelectorAll(".neg");
 for (let i = 0; i < acc.length; i++) {
 
     acc[i].addEventListener("click", function () {
-        // console.log(panel[i]);
-        if (panel[i].classList.contains("flex")) {
-          neg[i].innerText = "+"
-          neg[i].classList.replace("text-red-700", "text-blue-700");
-          panel[i].classList.replace("flex", "hidden");
-        } else if (panel[i].classList.contains("hidden")) {
-            neg[i].innerText = "-"
-            neg[i].classList.replace("text-blue-700", "text-red-700");
-            panel[i].classList.replace("hidden", "flex");
-            
+        // REPLACING TAILWIND CLASSES
+        // if (panel[i].classList.contains("flex")) {
+        //   neg[i].innerText = "+"
+        //   neg[i].classList.replace("text-red-700", "text-blue-700");
+        //   panel[i].classList.replace("flex", "hidden");
+        // } else if (panel[i].classList.contains("hidden")) {
+        //     neg[i].innerText = "-"
+        //     neg[i].classList.replace("text-blue-700", "text-red-700");
+        //     panel[i].classList.replace("hidden", "flex");
+        // }
+        if (panel[i].classList.contains("hidden")) {
+            // panel[i].style.display = "flex";
+            panel[i].style.height = "100%";
+            neg[i].innerText = "-";
+            neg[i].style.color = "red";
         }
-      
-    // if (panel.classList.contains("flex")) {
-    //   panel.classList.replace("flex","hidden");
-    // } else {
-    //   panel.style.display = "block";
-    // }
+    
   });
 }
